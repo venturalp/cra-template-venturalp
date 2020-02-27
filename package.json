@@ -1,0 +1,19 @@
+{
+  "name": "cra-template-venturalp",
+  "version": "0.0.1",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "venturalp"
+  ],
+  "main": "template.json",
+  "description": "Create React App template",
+  "repository": "git@github.com:venturalp/cra-template-venturalp.git",
+  "author": "Guilherme Ventura <venturalp@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "template",
+    "template.json"
+  ]
+}

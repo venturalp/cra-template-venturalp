@@ -19,15 +19,10 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.txt};
   }
 `
-
-const store = createStore(window.REDUX_DATA)
-
 render(
-  <Provider>
-    <ThemeProvider theme={mainTheme}>
-      <GlobalStyles />
-      <App />
-    </ThemeProvider>
-  </Provider>,
+  <ThemeProvider theme={mainTheme}>
+    <GlobalStyles />
+    <App />
+  </ThemeProvider>,
   document.getElementById('app'),
 )

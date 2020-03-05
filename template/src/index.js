@@ -3,8 +3,6 @@ import { render } from 'react-dom'
 import App from './app'
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import { mainTheme } from './config/theme'
-import { Provider } from 'react-redux'
-import createStore from './store'
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
@@ -25,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
 const store = createStore(window.REDUX_DATA)
 
 render(
-  <Provider store={store}>
+  <Provider>
     <ThemeProvider theme={mainTheme}>
       <GlobalStyles />
       <App />

@@ -1,13 +1,10 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { HashRouter as BrowserRouter, Route, Switch } from 'react-router-dom' // Using HashRouter instead of BrowserRouter to Router works properly at Netlify
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import routes from './routes'
 import Loading from './components/Loading'
 
 export default () => {
-  const isLoading = useSelector(
-    ({ generalReducer }) => generalReducer.isLoading,
-  )
+  const isLoading = false
 
   return (
     <BrowserRouter>
